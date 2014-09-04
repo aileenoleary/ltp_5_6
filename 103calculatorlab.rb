@@ -1,29 +1,31 @@
-# 2. Added exponent and square root capability
+#3. Add ability to accept math symbols
+
+#   Below, I added Compound Conditions by using OR "||" so the calculator can accept symbols
 
 def calculate(operation, num1, num2)
-	if operation == "add"
+	if operation == "add" || operation == "+"
 		add(num1, num2)
-	elsif operation == "subtract"
+	elsif operation == "subtract" || operation == "-"
 		subtract(num1, num2)
-	elsif operation == "divide"
+	elsif operation == "divide" || operation == "/"
 		divide(num1, num2)	
-	elsif operation == "multiply"
+	elsif operation == "multiply" || operation == "*"
 		multiply(num1, num2)
-	elsif operation == "exponify"
+	elsif operation == "exponify" || operation == "**"
 		exponify(num1, num2)
 	end
 end
 
 def operand(operation)
-	if operation == "add"
+	if operation == "add" || operation == "+"
 		return "+"
-	elsif operation == "subtract"
+	elsif operation == "subtract" || operation == "-"
 		return "-"
-	elsif operation == "divide"
+	elsif operation == "divide" || operation == "/"
 		return "/"
-	elsif operation == "multiply"
+	elsif operation == "multiply" || operation == "*"
 		return "*"
-	elsif operation == "exponify"
+	elsif operation == "exponify" || operation == "**"
 		return "^"	
 	end
 end
