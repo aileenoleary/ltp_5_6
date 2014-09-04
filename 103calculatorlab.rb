@@ -1,9 +1,13 @@
-# 1. Print out the formula ("2+2=4")
+# 2. Add ability to divide
 def calculate(operation, num1, num2)
 	if operation == "add"
 		add(num1, num2)
-	elsif operation =="subtract"
+	elsif operation == "subtract"
 		subtract(num1, num2)
+	elsif operation == "divide"
+		divide(num1, num2)	
+	elsif operation == "multiply"
+		multiply(num1, num2)	
 	end
 end
 
@@ -12,6 +16,10 @@ def operand(operation)
 		return "+"
 	elsif operation == "subtract"
 		return "-"
+	elsif operation == "divide"
+		return "/"
+	elsif operation == "multiply"
+		return "*"
 	end
 end
 
@@ -23,11 +31,18 @@ def subtract(num1, num2)
 	num1 - num2
 end
 		
+def divide(num1, num2)
+	num1 / num2
+end
 
-puts "Hey! I can help you do simple arithmetic numbers!  First, will we add or subtract?"
+def multiply(num1, num2)
+	num1 * num2
+end
+
+puts "Hey! I can help you calculate numbers!  First, will we add, subtract, divide, or multiply?"
 	operation = gets.chomp
 
-puts "Give me the first number"
+puts "Ok, give me the first number"
 	num1 = gets.chomp
 
 puts "Now, give me the second number"
