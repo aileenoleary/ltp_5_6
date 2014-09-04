@@ -55,6 +55,9 @@ puts "First, will we add, subtract, divide, multiply, exponify (find the exponen
 puts "Ok, give me the first number"
 	num1 = gets.chomp
 
+# I created a different arqument for the square root since it only needs one number.
+# Currently, the square root will return as a float.
+
 if operation != "sqrt"
 	puts "Now, give me the second number"
 		num2 = gets.chomp
