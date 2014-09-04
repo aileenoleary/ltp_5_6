@@ -33,8 +33,7 @@ puts "Give me the first number"
 puts "Now, give me the second number"
 	num2 = gets.chomp
 
-# I am having trouble making the operand change from "+" or "-".
-# This is so much easier: puts num1 + "+" + num2 + "=" + "#{answer}"
-# The current code below gives me a wrong number of arguments error msg
+# Below line allows the operand to change from add to subtract.  
+# The squigglies keep the string/integer from getting mixed.
 
-	puts "The answer to #{num1} #{operand(operation)} #{num2} = #{calculate(operation, num1.to_i, num2.to_i)}"
+puts "The answer to #{num1} #{operand(operation)} #{num2} = #{calculate(operation, num1.to_i, num2.to_i)}"
